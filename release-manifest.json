@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "destination": "cr15pykrnl/decarbon",
+  "rules": [
+    {
+      "pattern": "README.md",
+      "access": "public",
+      "reason": "Reviewed DOI-linked companion: attributed exploratory source, cleared notebooks, portable setup and numerical contract checks."
+    },
+    {
+      "pattern": ".gitignore",
+      "access": "public",
+      "reason": "Reviewed DOI-linked companion: attributed exploratory source, cleared notebooks, portable setup and numerical contract checks."
+    },
+    {
+      "pattern": "AGENTS.md",
+      "access": "public",
+      "reason": "Reviewed DOI-linked companion: attributed exploratory source, cleared notebooks, portable setup and numerical contract checks."
+    },
+    {
+      "pattern": "contributing.md",
+      "access": "public",
+      "reason": "Reviewed DOI-linked companion: attributed exploratory source, cleared notebooks, portable setup and numerical contract checks."
+    },
+    {
+      "pattern": "pyproject.toml",
+      "access": "public",
+      "reason": "Reviewed DOI-linked companion: attributed exploratory source, cleared notebooks, portable setup and numerical contract checks."
+    },
+    {
+      "pattern": "digital_twin/*.py",
+      "access": "public",
+      "reason": "Reviewed DOI-linked companion: attributed exploratory source, cleared notebooks, portable setup and numerical contract checks."
+    },
+    {
+      "pattern": "tests/*.py",
+      "access": "public",
+      "reason": "Reviewed DOI-linked companion: attributed exploratory source, cleared notebooks, portable setup and numerical contract checks."
+    },
+    {
+      "pattern": "notebooks/*.ipynb",
+      "access": "public",
+      "reason": "Reviewed DOI-linked companion: attributed exploratory source, cleared notebooks, portable setup and numerical contract checks."
+    },
+    {
+      "pattern": "release-manifest.json",
+      "access": "public",
+      "reason": "Reviewed DOI-linked companion: attributed exploratory source, cleared notebooks, portable setup and numerical contract checks."
+    },
+    {
+      "pattern": "examples/*/*.py",
+      "access": "public",
+      "reason": "Original exploratory notebook code reorganized into ordered source files; equations, values and execution sequence retained."
+    }
+  ],
+  "reviews": [
+    {
+      "path": "notebooks/01_technology_comparison.ipynb",
+      "sha256": "f333a10cc4d8d6fa75efbfe6b08e4181554597e6c8fbb3e4d4b6cf1a2f74e25e",
+      "rights": "Owner requested source publication of recovered workspace code. Attribution retained; no new code reuse license granted. Separate exploratory synthetic-data demo, not published simulation.",
+      "privacy": "Output-free notebook runs local example source in order. Code extracted without numerical changes; all example source compiles. No credentials, private paths or participant data. Notebook not executed for this release."
+    },
+    {
+      "path": "notebooks/02_monte_carlo_risk.ipynb",
+      "sha256": "3b3b01cba163df29c8d4ecdef055c576e6de804b6e2f3b7e7907637b5c862439",
+      "rights": "Owner requested source publication of recovered workspace code. Attribution retained; no new code reuse license granted. Separate exploratory synthetic-data demo, not published simulation.",
+      "privacy": "Output-free notebook runs local example source in order. Code extracted without numerical changes; all example source compiles. No credentials, private paths or participant data. Notebook not executed for this release."
+    }
+  ]
+}

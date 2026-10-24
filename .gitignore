@@ -1,0 +1,15 @@
+.DS_Store
+._*
+.local/
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+data/
+.ipynb_checkpoints/
+*.pdf
+*.docx
+provenance/
+hf-staging/
