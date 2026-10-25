@@ -1,0 +1,6 @@
+powertrain,emissions_t_co2e_per_vehicle,total_cost_aud,roi_percent
+Diesel,2173,2695046,
+Hybrid,1630,2356553,1574
+FCEV gray H2,1871,2056126,329
+BEV,831,2119324,108
+FCEV green H2,3288,3197473,-259

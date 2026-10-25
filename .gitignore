@@ -13,3 +13,10 @@ data/
 *.docx
 provenance/
 hf-staging/
+
+/figures/review-v1/*.aux
+/figures/review-v1/*.fdb_latexmk
+/figures/review-v1/*.fls
+/figures/review-v1/*.log
+/figures/review-v1/*.pdf
+/figures/review-v1/*.synctex.gz
