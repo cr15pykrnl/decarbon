@@ -51,8 +51,8 @@ sit below the individual plot boxes, with 2 mm side/top padding and a 3 mm gutte
 
 ## Selected export formats
 
-SVG is the selected version embedded in the project README. Anti-aliased PNG
-fallbacks accompany each SVG. PDF intermediates stay in ignored local storage;
+The project README embeds the anti-aliased PNG with an opaque white background
+for visibility in light and dark themes. Clicking the preview opens its SVG. PDF intermediates stay in ignored local storage;
 no PDFs are published. Poppler's `pdftocairo` is required for SVG export.
 
 These SVGs contain native vector geometry, plots and glyph outlines with no

@@ -85,7 +85,7 @@
   "authoring_files": [
     {
       "path": "README.md",
-      "sha256": "de8fbd0685f4b9bf96db55fd5d295e5830a925eb2738c7300873ce9648539928"
+      "sha256": "497b9a6864f2d571e2d088086bb22e79b5085e573b34794f873318332328fd8d"
     },
     {
       "path": "assets/decarbon-plot.png",
@@ -137,5 +137,6 @@
       "path": "transition-results.csv",
       "sha256": "18d5582c7c299ccf4f251f1db0014eae595f60bee7b5c8c27d8e0c8fe8793229"
     }
-  ]
+  ],
+  "readme_display": "Opaque white-background PNG preview linked to the corresponding SVG; artwork exports unchanged."
 }
