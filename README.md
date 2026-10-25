@@ -5,6 +5,11 @@ and emissions of Australian heavy freight? The published study compares these
 choices using a techno-economic simulation with nonlinear learning and energy
 transition effects.
 
+![Paper 1 graphical abstract: five vehicle choices and transition years feed linear and nonlinear simulations, comparing lifetime emissions and economic returns](figures/paper-1/assets/graphical-abstract.png)
+
+Conceptual graphical abstract of the published study.
+[Editable figure and scientific source notes](figures/paper-1/README.md).
+
 ## Publication
 
 **Techno-Economic Pathways Modeling and Nonlinear Optimized SEEA-ROI
@@ -114,6 +119,8 @@ npv_aud = calculate_npv(150000, [30000] * 5, discount_rate=0.08)
 ```
 
 See [contributing.md](contributing.md) for notebook setup and maintainer workflow.
+The [research-ops audit](docs/audit.md) records known uncertainty-handling,
+zero-baseline and executable-documentation issues in the exploratory helpers.
 
 ## Data
 

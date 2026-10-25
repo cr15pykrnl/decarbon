@@ -51,6 +51,31 @@
       "pattern": "examples/*/*.py",
       "access": "public",
       "reason": "Original exploratory notebook code reorganized into ordered source files; equations, values and execution sequence retained."
+    },
+    {
+      "pattern": "docs/audit.md",
+      "access": "public",
+      "reason": "Requested audit evidence or new paper-specific concept figure; DOI-linked source notes, no manuscript PDF or bulk data."
+    },
+    {
+      "pattern": "figures/paper-1/README.md",
+      "access": "public",
+      "reason": "Requested audit evidence or new paper-specific concept figure; DOI-linked source notes, no manuscript PDF or bulk data."
+    },
+    {
+      "pattern": "figures/paper-1/graphical-abstract.tex",
+      "access": "public",
+      "reason": "Requested audit evidence or new paper-specific concept figure; DOI-linked source notes, no manuscript PDF or bulk data."
+    },
+    {
+      "pattern": "figures/paper-1/provenance.json",
+      "access": "public",
+      "reason": "Requested audit evidence or new paper-specific concept figure; DOI-linked source notes, no manuscript PDF or bulk data."
+    },
+    {
+      "pattern": "figures/paper-1/assets/graphical-abstract.png",
+      "access": "public",
+      "reason": "Requested audit evidence or new paper-specific concept figure; DOI-linked source notes, no manuscript PDF or bulk data."
     }
   ],
   "reviews": [
@@ -65,6 +90,12 @@
       "sha256": "3b3b01cba163df29c8d4ecdef055c576e6de804b6e2f3b7e7907637b5c862439",
       "rights": "Owner requested source publication of recovered workspace code. Attribution retained; no new code reuse license granted. Separate exploratory synthetic-data demo, not published simulation.",
       "privacy": "Output-free notebook runs local example source in order. Code extracted without numerical changes; all example source compiles. No credentials, private paths or participant data. Notebook not executed for this release."
+    },
+    {
+      "path": "figures/paper-1/assets/graphical-abstract.png",
+      "sha256": "7ba6296bfcfa6584b9bd209142539738d369a80d6258e17a6fb9a45ba3a1d76e",
+      "rights": "New native TikZ artwork requested by owner; underlying study cited by DOI. No publisher image copied; no new figure reuse license asserted. Publication within standing owner authorization.",
+      "privacy": "Full-size and 900-pixel renders inspected. Scientific labels and schematic truck linework only; no people, private paths or credentials. Native font family, size, black labels, page bounds and exact dimensions verified."
     }
   ]
 }
