@@ -101,6 +101,16 @@
       "pattern": "figures/abstracts/transition-results.csv",
       "access": "public",
       "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
+    },
+    {
+      "pattern": "figures/abstracts/assets/decarbon-plot.svg",
+      "access": "public",
+      "reason": "Owner-selected SVG export of reviewed original graphical abstract; embedded artwork retains its existing attribution and rights."
+    },
+    {
+      "pattern": "figures/abstracts/assets/decarbon.svg",
+      "access": "public",
+      "reason": "Owner-selected SVG export of reviewed original graphical abstract; embedded artwork retains its existing attribution and rights."
     }
   ],
   "reviews": [
@@ -118,15 +128,27 @@
     },
     {
       "path": "figures/abstracts/assets/decarbon-plot.png",
-      "sha256": "7aa97a22968ff97dc51d3ba1868ce3ee89834493487f0c77252b6b1fc9239d5b",
-      "rights": "Owner-requested original diagrams, attributed published aggregate values, or generated conceptual line artwork. Required original illustration inputs and exact edit prompt retained. No publisher figure or manuscript PDF copied; no new reuse license assigned.",
-      "privacy": "Self-reviewed final and source artwork. Scientific labels and schematic subjects only; no participant photographs, credentials or machine paths. Final composite PNGs are one-bit black/white. Scenario characters and hardware are illustrative. Final exports rebuilt identically from consolidated sources."
+      "sha256": "2f9d72fa662cbf851556fd3c2753c713c6e32495d9d22b395fcc88e027439076",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
     },
     {
       "path": "figures/abstracts/assets/decarbon.png",
-      "sha256": "ba9931d17453a72d47ad7c4333cc86a7dc05929ca037f0a3dae541877d130021",
-      "rights": "Owner-requested original diagrams, attributed published aggregate values, or generated conceptual line artwork. Required original illustration inputs and exact edit prompt retained. No publisher figure or manuscript PDF copied; no new reuse license assigned.",
-      "privacy": "Self-reviewed final and source artwork. Scientific labels and schematic subjects only; no participant photographs, credentials or machine paths. Final composite PNGs are one-bit black/white. Scenario characters and hardware are illustrative. Final exports rebuilt identically from consolidated sources."
+      "sha256": "ff116992be0936181703935980102e3c36fe6df6d8276f54b19f48221a3f4028",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+    },
+    {
+      "path": "figures/abstracts/assets/decarbon-plot.svg",
+      "sha256": "6847c7fb1be01d79afec1c2bc2fc1b5472742d08ed848aa079ed0b31621766b9",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+    },
+    {
+      "path": "figures/abstracts/assets/decarbon.svg",
+      "sha256": "7c4b57c40f2956215d0ec79943dce12b736ae8e66c303ababcaa2ee135b3135d",
+      "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
+      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
     }
   ]
 }

@@ -4,9 +4,9 @@ The financially strongest option need not minimize emissions; grid-electrolysis 
 
 ## Figures
 
-- [decarbon](assets/decarbon.png): editable source `decarbon.tex`.
+- [decarbon](assets/decarbon.svg): editable source `decarbon.tex`.
 
-- [Standalone quantitative figure](assets/decarbon-plot.png): gnuplot sources, CSV values and `plot-panel.tex`.
+- [Standalone quantitative figure](assets/decarbon-plot.svg): gnuplot sources, CSV values and `plot-panel.tex`.
 
 ## Scientific evidence
 
@@ -29,15 +29,15 @@ From the repository root:
 sh figures/abstracts/build.sh
 ```
 
-The script regenerates the selected PNGs. Generated PDF intermediates, native
+The script regenerates the selected SVGs and anti-aliased PNG fallbacks. Generated PDF intermediates, native
 gnuplot exports and compiler logs stay in ignored `.local/figures/`; remove that
 folder after checking the outputs. The published package retains editable TikZ,
 plot scripts/data, required artwork, source evidence and checksums.
 
 Abstracts use a 240 × 180 mm canvas and export at 2400 × 1800 px (4:3), with
 960 × 720 px review views during builds. All native labels are 9 pt
-Helvetica-compatible. Final PNGs are strictly black/white. A uniform 0.85
-threshold is applied at export; original artwork inputs remain intact.
+Helvetica-compatible. Artwork and native labels remain black on white. PNG fallbacks use anti-aliased
+greyscale edges; no one-bit threshold is applied. Original artwork inputs remain intact.
 Informational dots, hatches, dash styles and markers encode categories.
 
 Inspect full-size and README-size renders after editing. Check scientific
@@ -48,3 +48,14 @@ license is asserted. Source data and illustrative content remain distinct.
 
 Both plots share one outer results frame. Their legend and scenario conditions
 sit below the individual plot boxes, with 2 mm side/top padding and a 3 mm gutter.
+
+## Selected export formats
+
+SVG is the selected version embedded in the project README. Anti-aliased PNG
+fallbacks accompany each SVG. PDF intermediates stay in ignored local storage;
+no PDFs are published. Poppler's `pdftocairo` is required for SVG export.
+
+These SVGs contain native vector geometry, plots and glyph outlines with no
+embedded bitmap images. Keep the TeX sources for editable labels.
+
+PNG fallbacks: [decarbon-plot](assets/decarbon-plot.png) · [decarbon](assets/decarbon.png)

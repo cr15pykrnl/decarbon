@@ -20,19 +20,24 @@
   ],
   "native_font": "9 pt Helvetica-compatible / NimbusSanL-Regu",
   "rendering": {
-    "mode": "--bilevel",
-    "uniform_luminance_threshold": 0.85,
-    "final_png_values": [
-      0,
-      255
-    ],
-    "geometry": "Native TikZ; gnuplot panels composed at native size; source artwork preserved"
+    "mode": "Anti-aliased grayscale PNG and SVG (--svg; no --bilevel)",
+    "authored_palette": "Black strokes and labels on white; gray raster edge pixels provide coverage only.",
+    "png_bit_depth": 8,
+    "png_color_type": 0,
+    "text_alpha_bits": 4,
+    "graphics_alpha_bits": 4,
+    "svg_exporter": "Poppler pdftocairo",
+    "svg_embedded_raster_images": {
+      "assets/decarbon-plot.svg": 0,
+      "assets/decarbon.svg": 0
+    },
+    "pdf_policy": "Ignored local compilation intermediate; excluded from release."
   },
-  "verification": "All selected abstracts and standalone plots rebuilt from the consolidated portable sources; all eight PNG SHA-256 digests match the reviewed outputs exactly. Native 9 pt Helvetica-compatible labels, bounds and one-bit exports verified. No new scientific experiment or model run.",
+  "verification": "Owner selected the reviewed SVG and anti-aliased previews. All figures rebuilt through updated portable scripts; native 9 pt labels and page bounds checked. No new scientific experiment or model run.",
   "plots": {
     "tool": "gnuplot 6.0.3 headless cairolatex",
     "wrapper": "plot-panel.tex",
-    "standalone": "assets/decarbon-plot.png",
+    "standalone": "assets/decarbon-plot.svg",
     "scripts": [
       "decarbon.gp"
     ],
@@ -76,35 +81,45 @@
     "conditions_y_mm": 27
   },
   "schema_version": 1,
-  "status": "Selected graphical abstracts; prepared for owner-reviewed commits. No new experiment or simulation.",
+  "status": "Owner-selected SVGs with anti-aliased PNG fallbacks. No new experiment or simulation.",
   "authoring_files": [
     {
       "path": "README.md",
-      "sha256": "60f9f4184f430ccaff24eaf83c60b7f8304a1580a12c4aadaecc4b1513d68ac0"
+      "sha256": "de8fbd0685f4b9bf96db55fd5d295e5830a925eb2738c7300873ce9648539928"
     },
     {
       "path": "assets/decarbon-plot.png",
-      "sha256": "7aa97a22968ff97dc51d3ba1868ce3ee89834493487f0c77252b6b1fc9239d5b",
+      "sha256": "2f9d72fa662cbf851556fd3c2753c713c6e32495d9d22b395fcc88e027439076",
       "pixels": [
         2400,
         1240
       ],
-      "png_bit_depth": 1,
+      "png_bit_depth": 8,
       "png_color_type": 0
     },
     {
+      "path": "assets/decarbon-plot.svg",
+      "sha256": "6847c7fb1be01d79afec1c2bc2fc1b5472742d08ed848aa079ed0b31621766b9",
+      "embedded_raster_images": 0
+    },
+    {
       "path": "assets/decarbon.png",
-      "sha256": "ba9931d17453a72d47ad7c4333cc86a7dc05929ca037f0a3dae541877d130021",
+      "sha256": "ff116992be0936181703935980102e3c36fe6df6d8276f54b19f48221a3f4028",
       "pixels": [
         2400,
         1800
       ],
-      "png_bit_depth": 1,
+      "png_bit_depth": 8,
       "png_color_type": 0
     },
     {
+      "path": "assets/decarbon.svg",
+      "sha256": "7c4b57c40f2956215d0ec79943dce12b736ae8e66c303ababcaa2ee135b3135d",
+      "embedded_raster_images": 0
+    },
+    {
       "path": "build.sh",
-      "sha256": "695777b824ab12335672ae033015afedf7d5fa3fb7265a400ba423d7d590bb2a"
+      "sha256": "543d4a3cd837e232c31a59359d60f33d05edaef8f3e1c1e9dd3e1f70d14e225c"
     },
     {
       "path": "decarbon.gp",

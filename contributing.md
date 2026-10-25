@@ -40,3 +40,6 @@ public code and data without that governance checkout.
 Do not add manuscript PDFs, Word drafts, private inventories or bulk data to Git.
 Keep the published model distinct from the exploratory demonstration. Record
 actual data changes and checks; do not claim reproduced paper results from demos.
+
+Selected figures use SVG with anti-aliased PNG fallbacks. Rebuilding SVG requires
+Poppler's `pdftocairo`; PDF intermediates remain local and ignored.
