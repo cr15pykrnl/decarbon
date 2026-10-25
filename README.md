@@ -5,10 +5,10 @@ and emissions of Australian heavy freight? The published study compares these
 choices using a techno-economic simulation with nonlinear learning and energy
 transition effects.
 
-![Paper 1 graphical abstract: five vehicle choices and transition years feed linear and nonlinear simulations, comparing lifetime emissions and economic returns](figures/paper-1/assets/graphical-abstract.png)
+![Paper 1 graphical abstract: five vehicle choices and transition years feed linear and nonlinear simulations, comparing lifetime emissions and economic returns](figures/abstracts/assets/decarbon.png)
 
 Conceptual graphical abstract of the published study.
-[Editable figure and scientific source notes](figures/paper-1/README.md).
+[Editable figure and scientific source notes](figures/abstracts/README.md).
 
 ## Publication
 

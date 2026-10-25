@@ -7,7 +7,7 @@ Read [README.md](README.md) for the publication and artifact scope. The recovere
 published 270-scenario simulation. AES 2024 tables are separate public contextual
 inputs linked to their official government source; no HF mirror is maintained.
 See [contributing.md](contributing.md) for setup and
-[figure notes](figures/paper-1/README.md) for the published paper's graphical abstract.
+[figure notes](figures/abstracts/README.md) for the published paper's graphical abstract.
 
 Link to the publication DOI; do not distribute PDFs or Word drafts. Private
 inventories and originals belong outside the public working tree. Keep original

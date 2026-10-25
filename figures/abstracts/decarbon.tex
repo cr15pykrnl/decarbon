@@ -1,0 +1,76 @@
+\documentclass[tikz,border=0pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage{graphicx}
+\graphicspath{{../../.local/figures/plots/}}
+\renewcommand{\familydefault}{\sfdefault}
+\usetikzlibrary{arrows.meta,calc}
+\tikzset{
+ flow/.style={-{Stealth[length=1.7mm,width=1.1mm]},line width=.75pt},
+}
+\begin{document}
+\begin{tikzpicture}[x=1mm,y=1mm,line width=.65pt,line cap=round,line join=round,
+ every node/.style={font=\fontsize{9}{11}\selectfont,inner sep=1pt,text=black}]
+\path[use as bounding box] (0,0) rectangle (240,180);
+\draw (8,122) rectangle (232,174);
+\node[anchor=west] at (12,169) {A. Model logic and scenario space};
+\node at (120,161) {270 scenarios = 5 powertrains x 3 technology paths x 3 lives x 3 transition years x 2 model modes};
+\node at (120,154) {Paths: constant / middle / advanced; lives: 5 / 10 / 15 years; modes: linear / nonlinear};
+% Five 40 mm cells, 4 mm gutters and equal 4 mm outer margins.
+\foreach \cx/\kind/\first/\second in {
+ 32/1/Vehicle cost learning/Wright's Law,
+ 76/2/Logistic grid/decarbonisation,
+ 120/3/Hydrogen price/learning,
+ 164/4/Electrification--grid/feedback,
+ 208/5/Tipping-point/detection}{
+ \draw (\cx-20,125) rectangle (\cx+20,149);
+ \begin{scope}[shift={(\cx,143)}]
+  \ifnum\kind=4
+   \draw[flow] (-7,0) arc[start angle=180,end angle=0,x radius=7,y radius=4];
+   \draw[flow] (7,0) arc[start angle=0,end angle=-180,x radius=7,y radius=4];
+  \else
+   \draw (-8,-4)--(-8,4) (-8,-4)--(8,-4);
+   \ifnum\kind=1
+    \draw (-7,3) .. controls (-5,-3) and (0,-3) .. (7,-3.5);
+   \fi
+   \ifnum\kind=2
+    \draw (-7,3.5) .. controls (2,4) and (-4,-4) .. (7,-3.5);
+   \fi
+   \ifnum\kind=3
+    \draw (-7,3)--(-2,0)--(2,-2)--(7,-3);
+   \fi
+   \ifnum\kind=5
+    \draw (-7,-3)--(7,3) (-7,3)--(7,-3);
+   \fi
+  \fi
+ \end{scope}
+ \node[align=center] at (\cx,130.5) {\first\\\second};
+}
+% Shared legend and both plots belong to one enclosing results group.
+\draw (8,23) rectangle (232,119);
+\foreach \yy/\xx/\kind in {41/20/1,41/125/2,34/20/3,34/125/4}{
+ \ifnum\kind=1 \draw (\xx-7,\yy)--(\xx+7,\yy);\fi
+ \ifnum\kind=2 \draw[dashed] (\xx-7,\yy)--(\xx+7,\yy);\fi
+ \ifnum\kind=3 \draw[dotted] (\xx-7,\yy)--(\xx+7,\yy);\fi
+ \ifnum\kind=4 \draw[dash dot] (\xx-7,\yy)--(\xx+7,\yy);\fi
+ \ifnum\kind=1 \fill (\xx-1.3,\yy-1.3) rectangle (\xx+1.3,\yy+1.3);\fi
+ \ifnum\kind=2 \fill (\xx,\yy+1.7)--(\xx+1.7,\yy-1.5)--(\xx-1.7,\yy-1.5)--cycle;\fi
+ \ifnum\kind=3 \fill (\xx,\yy) circle (1.4);\fi
+ \ifnum\kind=4 \fill (\xx,\yy+1.7)--(\xx+1.7,\yy)--(\xx,\yy-1.7)--(\xx-1.7,\yy)--cycle;\fi
+}
+\node[anchor=west] at (31,41) {Diesel hybrid};
+\node[anchor=west] at (136,41) {Fuel cell: gray hydrogen};
+\node[anchor=west] at (31,34) {Battery electric};
+\node[anchor=west] at (136,34) {Fuel cell: grid-electrolysis hydrogen};
+% Nested plot panels: 2 mm side/top padding and a 3 mm gutter.
+\draw (10,47) rectangle (118.5,117) (121.5,47) rectangle (230,117);
+\node[anchor=west,fill=white] at (12,113) {B. Lifetime emissions per vehicle};
+\node[anchor=west,fill=white] at (123.5,113) {C. Return on investment};
+\node at (120,27) {Australian baseline grid / nonlinear model / middle technology path / 10-year vehicle life / 25-year horizon};
+\node[anchor=south west,inner sep=0pt] at (10,46)
+ {\input{../../.local/figures/plots/decarbon-plot.tex}};
+\draw (8,3) rectangle (232,20);
+\node[anchor=west,align=left] at (12,11) {Grid-electrolysis hydrogen in these scenarios:\\Emissions below diesel by 2030; positive return by 2035.};
+\node[anchor=east,align=right] at (228,11) {Singh, Chang and Karaca (2026), Fractals, 2640063.\\Source: Table 2; reported model scenarios, not new simulations.\\Artwork: source-based conceptual reconstruction.};
+\end{tikzpicture}
+\end{document}

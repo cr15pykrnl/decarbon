@@ -1,0 +1,126 @@
+{
+  "refined_brief": "Source-grounded 4:3 black/white abstracts with framed subfigures, appropriate quantitative plots, explained terminology, consistent spacing and right-aligned source credits.",
+  "central_argument": "The financially strongest option need not minimize emissions; grid-electrolysis hydrogen depends on transition timing and the electricity pathway.",
+  "source_dois": [
+    "10.1142/S0218348X26400633"
+  ],
+  "source_evidence": "Published Table 2: nonlinear model, Mid (middle) technology, 10-year vehicle life, Australian government baseline grid. Transition-year scenarios are 2025, 2030 and 2035. Lifetime emissions are tonnes of carbon dioxide equivalent per vehicle; financial values are return on investment percentages relative to matched diesel. The diesel emissions reference is 2173 tonnes. In these scenarios grid-electrolysis hydrogen drops below diesel emissions by 2030 (1239 tonnes) but remains financially negative (-254 percent); it becomes positive by 2035 (389 percent). Battery emissions fall to 298 tonnes, while gray-hydrogen fuel cells reach 3209 percent return. Values are transcribed in transition-results.csv. The five mechanisms follow the model methods. Scenario factors are five powertrains, three technology paths (constant/middle/advanced), one baseline grid, three vehicle lives (5/10/15 years), three transition years, and two model modes (linear/nonlinear), totaling 270. The 25-year study horizon differs from vehicle life.",
+  "limitations": "A reported-value replot, not a new simulation or execution of the recovered synthetic-data demo. Connected points compare modeled adoption-year scenarios, not longitudinal observations. One deterministic value per scenario; no replicate or uncertainty interpretation. The paper calls grid-electrolysis hydrogen green hydrogen; the figure names the electricity source explicitly. Table 2 values are used consistently rather than reconciling inconsistent prose by inventing values.",
+  "canvas_mm": [
+    240,
+    180
+  ],
+  "png_pixels": [
+    2400,
+    1800
+  ],
+  "review_pixels": [
+    960,
+    720
+  ],
+  "native_font": "9 pt Helvetica-compatible / NimbusSanL-Regu",
+  "rendering": {
+    "mode": "--bilevel",
+    "uniform_luminance_threshold": 0.85,
+    "final_png_values": [
+      0,
+      255
+    ],
+    "geometry": "Native TikZ; gnuplot panels composed at native size; source artwork preserved"
+  },
+  "verification": "All selected abstracts and standalone plots rebuilt from the consolidated portable sources; all eight PNG SHA-256 digests match the reviewed outputs exactly. Native 9 pt Helvetica-compatible labels, bounds and one-bit exports verified. No new scientific experiment or model run.",
+  "plots": {
+    "tool": "gnuplot 6.0.3 headless cairolatex",
+    "wrapper": "plot-panel.tex",
+    "standalone": "assets/decarbon-plot.png",
+    "scripts": [
+      "decarbon.gp"
+    ],
+    "values": [
+      "transition-results.csv"
+    ],
+    "transforms": "Source Table 2 numbers unchanged; final-year labels rounded to integers (already integral). Zero-based emissions axis; financial axis includes losses. No error bars. Series use distinct point and dash styles, with full names in the native legend."
+  },
+  "image_generation": "No new image generation; existing label-free artwork reused where applicable.",
+  "reused_inputs": [],
+  "shared_legend_grouping": {
+    "outer_frame_mm": [
+      8,
+      23,
+      232,
+      119
+    ],
+    "nested_panels_mm": [
+      [
+        10,
+        47,
+        118.5,
+        117
+      ],
+      [
+        121.5,
+        47,
+        230,
+        117
+      ]
+    ],
+    "plot_gutter_mm": 3,
+    "legend": "Below both nested plot panels, inside enclosing group; no separate border; matching point and dash encodings",
+    "data": "Unchanged from previously checked published-value CSVs",
+    "verification": "Self-reviewed full abstract and standalone plot; renderer native font, colour and bounds checks passed",
+    "side_and_top_padding_mm": 2,
+    "legend_rows_y_mm": [
+      41,
+      34
+    ],
+    "conditions_y_mm": 27
+  },
+  "schema_version": 1,
+  "status": "Selected graphical abstracts; prepared for owner-reviewed commits. No new experiment or simulation.",
+  "authoring_files": [
+    {
+      "path": "README.md",
+      "sha256": "60f9f4184f430ccaff24eaf83c60b7f8304a1580a12c4aadaecc4b1513d68ac0"
+    },
+    {
+      "path": "assets/decarbon-plot.png",
+      "sha256": "7aa97a22968ff97dc51d3ba1868ce3ee89834493487f0c77252b6b1fc9239d5b",
+      "pixels": [
+        2400,
+        1240
+      ],
+      "png_bit_depth": 1,
+      "png_color_type": 0
+    },
+    {
+      "path": "assets/decarbon.png",
+      "sha256": "ba9931d17453a72d47ad7c4333cc86a7dc05929ca037f0a3dae541877d130021",
+      "pixels": [
+        2400,
+        1800
+      ],
+      "png_bit_depth": 1,
+      "png_color_type": 0
+    },
+    {
+      "path": "build.sh",
+      "sha256": "695777b824ab12335672ae033015afedf7d5fa3fb7265a400ba423d7d590bb2a"
+    },
+    {
+      "path": "decarbon.gp",
+      "sha256": "1bfcdf1deb7f95df152c4899244f91720322574b380f5609cfc784a3cb54c1e6"
+    },
+    {
+      "path": "decarbon.tex",
+      "sha256": "8cf1f0545b48b81784417cdcf8e71f47bf63d29668fb7626b1b240427d257f8f"
+    },
+    {
+      "path": "plot-panel.tex",
+      "sha256": "fce1a7535c7838281b520999ee3710bedcad8993d9240d1acfae1ab80467f23d"
+    },
+    {
+      "path": "transition-results.csv",
+      "sha256": "18d5582c7c299ccf4f251f1db0014eae595f60bee7b5c8c27d8e0c8fe8793229"
+    }
+  ]
+}

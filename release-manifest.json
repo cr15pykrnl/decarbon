@@ -58,49 +58,49 @@
       "reason": "Requested audit evidence or new paper-specific concept figure; DOI-linked source notes, no manuscript PDF or bulk data."
     },
     {
-      "pattern": "figures/paper-1/README.md",
+      "pattern": "figures/abstracts/README.md",
       "access": "public",
-      "reason": "Requested audit evidence or new paper-specific concept figure; DOI-linked source notes, no manuscript PDF or bulk data."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/paper-1/graphical-abstract.tex",
+      "pattern": "figures/abstracts/assets/decarbon-plot.png",
       "access": "public",
-      "reason": "Requested audit evidence or new paper-specific concept figure; DOI-linked source notes, no manuscript PDF or bulk data."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/paper-1/provenance.json",
+      "pattern": "figures/abstracts/assets/decarbon.png",
       "access": "public",
-      "reason": "Requested audit evidence or new paper-specific concept figure; DOI-linked source notes, no manuscript PDF or bulk data."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/paper-1/assets/graphical-abstract.png",
+      "pattern": "figures/abstracts/build.sh",
       "access": "public",
-      "reason": "Requested audit evidence or new paper-specific concept figure; DOI-linked source notes, no manuscript PDF or bulk data."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/review-v1/README.md",
+      "pattern": "figures/abstracts/decarbon.gp",
       "access": "public",
-      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/review-v1/assets/decarbon.png",
+      "pattern": "figures/abstracts/decarbon.tex",
       "access": "public",
-      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/review-v1/decarbon.tex",
+      "pattern": "figures/abstracts/plot-panel.tex",
       "access": "public",
-      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/review-v1/provenance.json",
+      "pattern": "figures/abstracts/provenance.json",
       "access": "public",
-      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     },
     {
-      "pattern": "figures/review-v1/reported-results.csv",
+      "pattern": "figures/abstracts/transition-results.csv",
       "access": "public",
-      "reason": "Requested first 4:3 review candidate: paper-specific brief, source evidence, reported-value fixture, editable composition or inspected export. Existing selected figure retained."
+      "reason": "Selected owner-reviewed graphical abstract, original/previously reviewed conceptual artwork, published-value plot or portable authoring evidence. Publication and commits still require current owner authorization."
     }
   ],
   "reviews": [
@@ -117,16 +117,16 @@
       "privacy": "Output-free notebook runs local example source in order. Code extracted without numerical changes; all example source compiles. No credentials, private paths or participant data. Notebook not executed for this release."
     },
     {
-      "path": "figures/paper-1/assets/graphical-abstract.png",
-      "sha256": "7ba6296bfcfa6584b9bd209142539738d369a80d6258e17a6fb9a45ba3a1d76e",
-      "rights": "New native TikZ artwork requested by owner; underlying study cited by DOI. No publisher image copied; no new figure reuse license asserted. Publication within standing owner authorization.",
-      "privacy": "Full-size and 900-pixel renders inspected. Scientific labels and schematic truck linework only; no people, private paths or credentials. Native font family, size, black labels, page bounds and exact dimensions verified."
+      "path": "figures/abstracts/assets/decarbon-plot.png",
+      "sha256": "7aa97a22968ff97dc51d3ba1868ce3ee89834493487f0c77252b6b1fc9239d5b",
+      "rights": "Owner-requested original diagrams, attributed published aggregate values, or generated conceptual line artwork. Required original illustration inputs and exact edit prompt retained. No publisher figure or manuscript PDF copied; no new reuse license assigned.",
+      "privacy": "Self-reviewed final and source artwork. Scientific labels and schematic subjects only; no participant photographs, credentials or machine paths. Final composite PNGs are one-bit black/white. Scenario characters and hardware are illustrative. Final exports rebuilt identically from consolidated sources."
     },
     {
-      "path": "figures/review-v1/assets/decarbon.png",
-      "sha256": "94de569c247f7916370433ce217970b89701ace24b143fe8f434b2fccc426764",
-      "rights": "New owner-requested review composition. Original native geometry and/or previously reviewed accepted artwork; underlying publications cited in companion source notes. No publisher figure copied or new figure reuse license assigned.",
-      "privacy": "Review render inspected: scientific diagram, schematic interface or reported aggregate values only. No credentials, identifying machine paths or participant photographs. Native 9 pt black labels, one font family, page bounds and exact 4:3 output dimensions verified."
+      "path": "figures/abstracts/assets/decarbon.png",
+      "sha256": "ba9931d17453a72d47ad7c4333cc86a7dc05929ca037f0a3dae541877d130021",
+      "rights": "Owner-requested original diagrams, attributed published aggregate values, or generated conceptual line artwork. Required original illustration inputs and exact edit prompt retained. No publisher figure or manuscript PDF copied; no new reuse license assigned.",
+      "privacy": "Self-reviewed final and source artwork. Scientific labels and schematic subjects only; no participant photographs, credentials or machine paths. Final composite PNGs are one-bit black/white. Scenario characters and hardware are illustrative. Final exports rebuilt identically from consolidated sources."
     }
   ]
 }

@@ -1,0 +1,4 @@
+year,hybrid_emissions,gray_hydrogen_emissions,battery_emissions,grid_hydrogen_emissions,hybrid_return,gray_hydrogen_return,battery_return,grid_hydrogen_return
+2025,1630,1871,831,3288,1574,329,108,-259
+2030,1630,1871,313,1239,2116,1430,352,-254
+2035,1630,1871,298,1178,2748,3209,735,389
