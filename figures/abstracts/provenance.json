@@ -50,26 +50,26 @@
   "reused_inputs": [],
   "shared_legend_grouping": {
     "outer_frame_mm": [
-      8,
+      3,
       23,
-      232,
+      237,
       119
     ],
     "nested_panels_mm": [
       [
-        10,
+        5.439325,
         47,
-        118.5,
-        117
+        118.82427,
+        116.560675
       ],
       [
-        121.5,
+        121.17573,
         47,
-        230,
-        117
+        234.560675,
+        116.560675
       ]
     ],
-    "plot_gutter_mm": 3,
+    "plot_gutter_mm": 2,
     "legend": "Below both nested plot panels, inside enclosing group; no separate border; matching point and dash encodings",
     "data": "Unchanged from previously checked published-value CSVs",
     "verification": "Self-reviewed full abstract and standalone plot; renderer native font, colour and bounds checks passed",
@@ -78,18 +78,19 @@
       41,
       34
     ],
-    "conditions_y_mm": 27
+    "conditions_y_mm": 27,
+    "plot_gutter_measurement": "2 mm visible; 2.35146 mm between frame centerlines."
   },
   "schema_version": 1,
   "status": "Owner-selected SVGs with anti-aliased PNG fallbacks. No new experiment or simulation.",
   "authoring_files": [
     {
       "path": "README.md",
-      "sha256": "497b9a6864f2d571e2d088086bb22e79b5085e573b34794f873318332328fd8d"
+      "sha256": "5895690c298ec4dfad47be4901fd15a919a8dbb534af7f8ce47df60c187d5d76"
     },
     {
       "path": "assets/decarbon-plot.png",
-      "sha256": "2f9d72fa662cbf851556fd3c2753c713c6e32495d9d22b395fcc88e027439076",
+      "sha256": "a978f4ff08f434fbb4a08cab9b3513cfb515255ccb5d57f866c37dd82a6f7564",
       "pixels": [
         2400,
         1240
@@ -99,12 +100,12 @@
     },
     {
       "path": "assets/decarbon-plot.svg",
-      "sha256": "6847c7fb1be01d79afec1c2bc2fc1b5472742d08ed848aa079ed0b31621766b9",
+      "sha256": "9961f52a692611e2256fd5d98e9f1db34e81fd6d96e57ed63b8234371493df17",
       "embedded_raster_images": 0
     },
     {
       "path": "assets/decarbon.png",
-      "sha256": "ff116992be0936181703935980102e3c36fe6df6d8276f54b19f48221a3f4028",
+      "sha256": "1991d689f82d201067922eda2a11454ab115febed8cac2d1faf61c9ef53aed01",
       "pixels": [
         2400,
         1800
@@ -114,7 +115,7 @@
     },
     {
       "path": "assets/decarbon.svg",
-      "sha256": "7c4b57c40f2956215d0ec79943dce12b736ae8e66c303ababcaa2ee135b3135d",
+      "sha256": "24ad7715632a94093a9d25dd31baec3d653305b10e9855ad9997c8eac29bc7df",
       "embedded_raster_images": 0
     },
     {
@@ -123,20 +124,73 @@
     },
     {
       "path": "decarbon.gp",
-      "sha256": "1bfcdf1deb7f95df152c4899244f91720322574b380f5609cfc784a3cb54c1e6"
+      "sha256": "b8cd406545e49f10ea63531c59271f71612de9de31b88ac9bf52e20c1fdafd5a"
     },
     {
       "path": "decarbon.tex",
-      "sha256": "8cf1f0545b48b81784417cdcf8e71f47bf63d29668fb7626b1b240427d257f8f"
+      "sha256": "bade00da031fa8a4206b89e08370f19890f262fc459b048c3a7ab87f1dde23d8"
     },
     {
       "path": "plot-panel.tex",
-      "sha256": "fce1a7535c7838281b520999ee3710bedcad8993d9240d1acfae1ab80467f23d"
+      "sha256": "e268eb25c6cadc001117b876da4f6ccf7d09b4ce4072a5951a52b074df85b17f"
     },
     {
       "path": "transition-results.csv",
       "sha256": "18d5582c7c299ccf4f251f1db0014eae595f60bee7b5c8c27d8e0c8fe8793229"
     }
   ],
-  "readme_display": "Opaque white-background PNG preview linked to the corresponding SVG; artwork exports unchanged."
+  "readme_display": "Opaque white-background PNG preview linked to the corresponding SVG; artwork exports unchanged.",
+  "frame_layout": {
+    "page_outer_margin_mm": 3,
+    "main_panel_gutter_mm": 4,
+    "nested_plot_padding_mm": 2,
+    "nested_plot_gutter_mm": 2,
+    "audit": "All exported PNG outer ink margins measured equal to within one pixel; renderer checks native font size and page bounds. Visual review covers nested clearances and optical balance.",
+    "exports": {
+      "decarbon-plot.png": {
+        "pixels": [
+          2400,
+          1240
+        ],
+        "visible_ink_margins_px": [
+          27,
+          27,
+          27,
+          27
+        ],
+        "sha256": "a978f4ff08f434fbb4a08cab9b3513cfb515255ccb5d57f866c37dd82a6f7564"
+      },
+      "decarbon.png": {
+        "pixels": [
+          2400,
+          1800
+        ],
+        "visible_ink_margins_px": [
+          27,
+          27,
+          27,
+          27
+        ],
+        "sha256": "1991d689f82d201067922eda2a11454ab115febed8cac2d1faf61c9ef53aed01"
+      }
+    },
+    "plot_content_centers_mm": [
+      62,
+      178
+    ],
+    "plot_content_centering_verification": "Rendered complete plot ink bounds, excluding heading/caption, centered within 0.15 mm; actual measured errors 0 mm.",
+    "model_cell_insets_mm": {
+      "left": 3,
+      "right": 3,
+      "bottom": 3,
+      "cell_width": 42.4,
+      "gutter": 4
+    },
+    "border_width_pt": {
+      "main": 1.5,
+      "nested": 1
+    },
+    "nested_padding_measurement": "2 mm visible white gap between stroke edges; coordinates compensate for 1.5 pt parent and 1 pt nested strokes.",
+    "corner_join": "Square miter joins; frame caps butt."
+  }
 }

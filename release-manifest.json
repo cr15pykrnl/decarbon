@@ -128,27 +128,27 @@
     },
     {
       "path": "figures/abstracts/assets/decarbon-plot.png",
-      "sha256": "2f9d72fa662cbf851556fd3c2753c713c6e32495d9d22b395fcc88e027439076",
+      "sha256": "a978f4ff08f434fbb4a08cab9b3513cfb515255ccb5d57f866c37dd82a6f7564",
       "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
-      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+      "privacy": "Self-reviewed selected artwork with equal outer frame margins and consistent main gutters. Source illustration inputs, numerical values and scientific interpretation unchanged; no private data or machine paths. SVGs retain selected PNG illustrations where applicable; opaque PNG previews have anti-aliased edges."
     },
     {
       "path": "figures/abstracts/assets/decarbon.png",
-      "sha256": "ff116992be0936181703935980102e3c36fe6df6d8276f54b19f48221a3f4028",
+      "sha256": "1991d689f82d201067922eda2a11454ab115febed8cac2d1faf61c9ef53aed01",
       "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
-      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+      "privacy": "Self-reviewed selected artwork with equal outer frame margins and consistent main gutters. Source illustration inputs, numerical values and scientific interpretation unchanged; no private data or machine paths. SVGs retain selected PNG illustrations where applicable; opaque PNG previews have anti-aliased edges."
     },
     {
       "path": "figures/abstracts/assets/decarbon-plot.svg",
-      "sha256": "6847c7fb1be01d79afec1c2bc2fc1b5472742d08ed848aa079ed0b31621766b9",
+      "sha256": "9961f52a692611e2256fd5d98e9f1db34e81fd6d96e57ed63b8234371493df17",
       "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
-      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+      "privacy": "Self-reviewed selected artwork with equal outer frame margins and consistent main gutters. Source illustration inputs, numerical values and scientific interpretation unchanged; no private data or machine paths. SVGs retain selected PNG illustrations where applicable; opaque PNG previews have anti-aliased edges."
     },
     {
       "path": "figures/abstracts/assets/decarbon.svg",
-      "sha256": "7c4b57c40f2956215d0ec79943dce12b736ae8e66c303ababcaa2ee135b3135d",
+      "sha256": "24ad7715632a94093a9d25dd31baec3d653305b10e9855ad9997c8eac29bc7df",
       "rights": "Owner-selected original conceptual artwork and attributed reported-value plots; no copied publisher figure or manuscript PDF; no new reuse licence assigned.",
-      "privacy": "Self-reviewed scientific labels and schematic subjects; no participant photographs, credentials or private machine paths. SVGs inspected for embedded content; labels and geometry preserved. PNG fallbacks use anti-aliased edges."
+      "privacy": "Self-reviewed selected artwork with equal outer frame margins and consistent main gutters. Source illustration inputs, numerical values and scientific interpretation unchanged; no private data or machine paths. SVGs retain selected PNG illustrations where applicable; opaque PNG previews have anti-aliased edges."
     }
   ]
 }

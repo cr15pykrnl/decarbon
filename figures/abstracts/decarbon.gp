@@ -16,8 +16,8 @@ set style line 2 linecolor rgb "black" linewidth 1.4 dashtype 2 pointtype 9 poin
 set style line 3 linecolor rgb "black" linewidth 1.4 dashtype 3 pointtype 7 pointsize .65
 set style line 4 linecolor rgb "black" linewidth 1.4 dashtype 4 pointtype 13 pointsize .65
 set multiplot layout 1,2
-set lmargin at screen .13
-set rmargin at screen .44
+set lmargin at screen 0.11409091
+set rmargin at screen 0.42409091
 set bmargin at screen .24
 set tmargin at screen .84
 set yrange [0:3600]
@@ -30,8 +30,8 @@ plot for [i=2:5] "../../../figures/abstracts/transition-results.csv" using 1:(co
  for [i=2:5] "" using ($1==2035?$1:1/0):(column(i)):(sprintf("%.0f",column(i))) with labels left offset 1.3,0 textcolor rgb "black"
 unset arrow 1
 unset label 1
-set lmargin at screen .655
-set rmargin at screen .965
+set lmargin at screen 0.64159091
+set rmargin at screen 0.95159091
 set yrange [-500:3500]
 set ytics 1000
 unset title

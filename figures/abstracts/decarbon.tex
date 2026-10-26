@@ -8,23 +8,24 @@
 \tikzset{
  flow/.style={-{Stealth[length=1.7mm,width=1.1mm]},line width=.75pt},
 }
+\tikzset{frameone/.style={line width=1.5pt,line join=miter,line cap=butt},frametwo/.style={line width=1pt,line join=miter,line cap=butt}}
 \begin{document}
-\begin{tikzpicture}[x=1mm,y=1mm,line width=.65pt,line cap=round,line join=round,
+\begin{tikzpicture}[x=1mm,y=1mm,line width=.65pt,line cap=round,line join=miter,
  every node/.style={font=\fontsize{9}{11}\selectfont,inner sep=1pt,text=black}]
 \path[use as bounding box] (0,0) rectangle (240,180);
-\draw (8,122) rectangle (232,174);
-\node[anchor=west] at (12,169) {A. Model logic and scenario space};
+\draw[frameone] (3,123) rectangle (237,177);
+\node[anchor=west] at (7,172) {A. Model logic and scenario space};
 \node at (120,161) {270 scenarios = 5 powertrains x 3 technology paths x 3 lives x 3 transition years x 2 model modes};
 \node at (120,154) {Paths: constant / middle / advanced; lives: 5 / 10 / 15 years; modes: linear / nonlinear};
-% Five 40 mm cells, 4 mm gutters and equal 4 mm outer margins.
+% Five 42.4 mm cells, 4 mm gutters; equal 3 mm left/right/bottom insets.
 \foreach \cx/\kind/\first/\second in {
- 32/1/Vehicle cost learning/Wright's Law,
- 76/2/Logistic grid/decarbonisation,
+ 27.2/1/Vehicle cost learning/Wright's Law,
+ 73.6/2/Logistic grid/decarbonisation,
  120/3/Hydrogen price/learning,
- 164/4/Electrification--grid/feedback,
- 208/5/Tipping-point/detection}{
- \draw (\cx-20,125) rectangle (\cx+20,149);
- \begin{scope}[shift={(\cx,143)}]
+ 166.4/4/Electrification--grid/feedback,
+ 212.8/5/Tipping-point/detection}{
+ \draw[frametwo] (\cx-21.2,126) rectangle (\cx+21.2,150);
+ \begin{scope}[shift={(\cx,144)}]
   \ifnum\kind=4
    \draw[flow] (-7,0) arc[start angle=180,end angle=0,x radius=7,y radius=4];
    \draw[flow] (7,0) arc[start angle=0,end angle=-180,x radius=7,y radius=4];
@@ -44,10 +45,10 @@
    \fi
   \fi
  \end{scope}
- \node[align=center] at (\cx,130.5) {\first\\\second};
+ \node[align=center] at (\cx,131.5) {\first\\\second};
 }
 % Shared legend and both plots belong to one enclosing results group.
-\draw (8,23) rectangle (232,119);
+\draw[frameone] (3,23) rectangle (237,119);
 \foreach \yy/\xx/\kind in {41/20/1,41/125/2,34/20/3,34/125/4}{
  \ifnum\kind=1 \draw (\xx-7,\yy)--(\xx+7,\yy);\fi
  \ifnum\kind=2 \draw[dashed] (\xx-7,\yy)--(\xx+7,\yy);\fi
@@ -62,15 +63,15 @@
 \node[anchor=west] at (136,41) {Fuel cell: gray hydrogen};
 \node[anchor=west] at (31,34) {Battery electric};
 \node[anchor=west] at (136,34) {Fuel cell: grid-electrolysis hydrogen};
-% Nested plot panels: 2 mm side/top padding and a 3 mm gutter.
-\draw (10,47) rectangle (118.5,117) (121.5,47) rectangle (230,117);
-\node[anchor=west,fill=white] at (12,113) {B. Lifetime emissions per vehicle};
-\node[anchor=west,fill=white] at (123.5,113) {C. Return on investment};
+% Nested plot panels: 2 mm side/top padding and a matching 2 mm gutter.
+\draw[frametwo] (5.439325,47) rectangle (118.82427,116.560675) (121.17573,47) rectangle (234.560675,116.560675);
+\node[anchor=west,fill=white] at (7,113) {B. Lifetime emissions per vehicle};
+\node[anchor=west,fill=white] at (123,113) {C. Return on investment};
 \node at (120,27) {Australian baseline grid / nonlinear model / middle technology path / 10-year vehicle life / 25-year horizon};
 \node[anchor=south west,inner sep=0pt] at (10,46)
  {\input{../../.local/figures/plots/decarbon-plot.tex}};
-\draw (8,3) rectangle (232,20);
-\node[anchor=west,align=left] at (12,11) {Grid-electrolysis hydrogen in these scenarios:\\Emissions below diesel by 2030; positive return by 2035.};
-\node[anchor=east,align=right] at (228,11) {Singh, Chang and Karaca (2026), Fractals, 2640063.\\Source: Table 2; reported model scenarios, not new simulations.\\Artwork: source-based conceptual reconstruction.};
+\draw[frameone] (3,3) rectangle (237,19);
+\node[anchor=west,align=left] at (7,11) {Grid-electrolysis hydrogen in these scenarios:\\Emissions below diesel by 2030; positive return by 2035.};
+\node[anchor=east,align=right] at (233,11) {Singh, Chang and Karaca (2026), Fractals, 2640063.\\Source: Table 2; reported model scenarios, not new simulations.\\Artwork: source-based conceptual reconstruction.};
 \end{tikzpicture}
 \end{document}
